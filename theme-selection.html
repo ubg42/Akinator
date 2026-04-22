@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.css">
+            <link rel="stylesheet" href="/assets/css/app-v3.css">
+        <link rel="stylesheet" href="/assets/css/flag-icons.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js" type="c001dc2c6cbe968ebfaa9d4c-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js" type="c001dc2c6cbe968ebfaa9d4c-text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Akinator</title>
+    <meta name="description" content="Akinator">
+    <link rel="canonical" href="https://akinator.com" />
+    <meta name="author" content="Elokence">
+        <!--BEGIN FIRSTIMPRESSION TAG - http://akinator.com -->
+    <script data-cfasync='false' type='text/javascript'>
+        window.apd_options = { 'websiteId': 7256, 'runFromFrame': false };
+        (function() {
+            var w = window.apd_options.runFromFrame ? window.top : window;
+            if(window.apd_options.runFromFrame && w!==window.parent) w=window.parent;
+            if (w.location.hash.indexOf('apdAdmin') !== -1){if(typeof(Storage) !== 'undefined') {w.localStorage.apdAdmin = 1;}}
+            var adminMode = ((typeof(Storage) == 'undefined') || (w.localStorage.apdAdmin === 1));
+            w.apd_options=window.apd_options;
+            var apd = w.document.createElement('script'); apd.type = 'text/javascript'; apd.async = true;
+            apd.src = '//' + (adminMode ? 'cdn' : 'ecdn') + '.firstimpression.io/' + (adminMode ? 'fi.js?id=' + window.apd_options.websiteId : 'fi_client.js') ;
+            var s = w.document.getElementsByTagName('head')[0]; s.appendChild(apd);
+        })();</script>
+    <!-- END FIRSTIMPRESSION TAG -->
+        <!-- MANDATORY: BEGIN IAB STUB -->
+    <script type="c001dc2c6cbe968ebfaa9d4c-text/javascript">
+        !function(){var e=function(){var e,t="__tcfapiLocator",a=[],n=window;for(;n;){try{if(n.frames[t]){e=n;break}}catch(e){}if(n===window.top)break;n=n.parent}e||(!function e(){var a=n.document,r=!!n.frames[t];if(!r)if(a.body){var s=a.createElement("iframe");s.style.cssText="display:none",s.name=t,a.body.appendChild(s)}else setTimeout(e,5);return!r}(),n.__tcfapi=function(){for(var e,t=arguments.length,n=new Array(t),r=0;r<t;r++)n[r]=arguments[r];if(!n.length)return a;if("setGdprApplies"===n[0])n.length>3&&2===parseInt(n[1],10)&&"boolean"==typeof n[3]&&(e=n[3],"function"==typeof n[2]&&n[2]("set",!0));else if("ping"===n[0]){var s={gdprApplies:e,cmpLoaded:!1,cmpStatus:"stub"};"function"==typeof n[2]&&n[2](s)}else a.push(n)},n.addEventListener("message",(function(e){var t="string"==typeof e.data,a={};try{a=t?JSON.parse(e.data):e.data}catch(e){}var n=a.__tcfapiCall;n&&window.__tcfapi(n.command,n.version,(function(a,r){var s={__tcfapiReturn:{returnValue:a,success:r,callId:n.callId}};t&&(s=JSON.stringify(s)),e&&e.source&&e.source.postMessage&&e.source.postMessage(s,"*")}),n.parameter)}),!1))};"undefined"!=typeof module?module.exports=e:e()}();
+    </script>
+    <!-- MANDATORY: END IAB STUB -->
+    <script type="c001dc2c6cbe968ebfaa9d4c-text/javascript">
+                const configSFBXAppConsent = {
+            appKey: '20f6cf75-78eb-42e4-aaab-2ae22fe7aeda',
+            enableGCM: true
+        }
+        
+    </script>
+    <script src="https://cdn.appconsent.io/tcf2-clear/current/core.bundle.js" defer async type="c001dc2c6cbe968ebfaa9d4c-text/javascript"></script>
+    <script type="c001dc2c6cbe968ebfaa9d4c-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        (window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'functionality_storage': 'granted',
+            'security_storage': 'granted',
+            'personalization_storage': 'denied',
+            'ad_storage': 'denied',
+            'wait_for_update': 500
+        });
+    </script>
+            <!-- HEAD -->
+    <script type="c001dc2c6cbe968ebfaa9d4c-text/javascript">
+        // A/B test logic to load either the Fuse ad tag or the competitor's ad tag
+        function loadScript(scriptUrl) {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptUrl;
+            document.head.appendChild(script);
+        }
+        loadScript('https://cdn.fuseplatform.net/publift/tags/2/3935/fuse.js');
+    </script>
+        <style type="text/css">@font-face {font-family:PT Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans/5.0.11/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:PT Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans/5.0.11/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:PT Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:PT Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon-180x180.png"/>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5"/>
+</head>
+<body>
+<div class="parallax-overlay " id="parallax-overlay">
+    <div class="parallax-layer-1"></div>
+    <div class="parallax-layer-2"></div>
+    <div class="parallax-layer-3"></div>
+    <div class="parallax-layer-4"></div>
+    <div class="parallax-layer-5"></div>
+    <div class="parallax-layer-6"></div>
+    <div class="parallax-layer-7"></div>
+    <div class="rhombus rhombus-layer-1"></div>
+    <div class="rhombus rhombus-layer-2"></div>
+    <div class="rhombus rhombus-group group-1" style="width: 50px">
+        <div class="rhombus rhombus-layer-3"></div>
+        <div class="rhombus rhombus-layer-4"></div>
+        <div class="rhombus rhombus-layer-5"></div>
+    </div>
+    <div class="rhombus rhombus-layer-6"></div>
+    <div class="rhombus rhombus-layer-7"></div>
+    <div class="rhombus rhombus-layer-8"></div>
+    <div class="rhombus rhombus-group group-2" style="width: 50px">
+        <div class="rhombus rhombus-layer-9"></div>
+        <div class="rhombus rhombus-layer-10"></div>
+        <div class="rhombus rhombus-layer-11"></div>
+    </div>
+    <div class="rhombus rhombus-group group-3" style="width: 50px">
+        <div class="rhombus rhombus-layer-12"></div>
+        <div class="rhombus rhombus-layer-13"></div>
+    </div>
+    <div class="rhombus rhombus-group group-4" style="width: 50px">
+        <div class="rhombus rhombus-layer-14"></div>
+        <div class="rhombus rhombus-layer-15"></div>
+    </div>
+    <div class="rhombus rhombus-group group-5" style="width: 50px">
+        <div class="rhombus rhombus-layer-16"></div>
+        <div class="rhombus rhombus-layer-17"></div>
+    </div>
+    <div class="rhombus rhombus-group group-6" style="width: 50px">
+        <div class="rhombus rhombus-layer-18"></div>
+        <div class="rhombus rhombus-layer-19"></div>
+    </div>
+    <div class="rhombus rhombus-group group-7" style="width: 50px">
+        <div class="rhombus rhombus-layer-20"></div>
+        <div class="rhombus rhombus-layer-21"></div>
+    </div>
+    <div class="rhombus rhombus-group group-8" style="width: 50px">
+        <div class="rhombus rhombus-layer-22"></div>
+        <div class="rhombus rhombus-layer-23"></div>
+    </div>
+</div>
+<header>
+    <div class="container " >
+        <div class="row direction-ltr ">
+                    <div class="col-md-2 col-sm-2 col-xs-2 home-logo">
+        <a href="/">
+            <img class="logo" src="/assets/img/logo_akinator.png" alt="logo akinator" height="auto" width="200px" />
+        </a>
+    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-xs-3 col-3 lang-home-block">
+        <div class="lang-switcher">
+            <div class="lang-selected ">
+                <span class="lang-label">English</span>
+                <span class="flag-icon flag-icon-en"></span>
+            </div>
+            <div class="dropdown-lang dialog-box selector">
+                <ul>
+                                            <li class="lang-border">
+                            <a class="current" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('en')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">English<span class="flag-icon flag-icon-en"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('ar')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">العربية<span class="flag-icon flag-icon-ar"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('cn')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">中文<span class="flag-icon flag-icon-cn"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('de')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Deutsch<span class="flag-icon flag-icon-de"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('es')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Español<span class="flag-icon flag-icon-es"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('fr')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Français<span class="flag-icon flag-icon-fr"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('il')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">עברית<span class="flag-icon flag-icon-il"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('it')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Italiano<span class="flag-icon flag-icon-it"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('jp')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">日本<span class="flag-icon flag-icon-jp"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('kr')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">한국어<span class="flag-icon flag-icon-kr"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('nl')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Nederlands<span class="flag-icon flag-icon-nl"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('pl')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Polski<span class="flag-icon flag-icon-pl"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('pt')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Português<span class="flag-icon flag-icon-pt"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('ru')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">русский<span class="flag-icon flag-icon-ru"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('tr')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Türkçe<span class="flag-icon flag-icon-tr"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('id')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Indonesian<span class="flag-icon flag-icon-id"></span></a>
+                        </li>
+                                            <li class="lang-border">
+                            <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; changeLocale('vi')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Tiếng Việt<span class="flag-icon flag-icon-vi"></span></a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-5 col-xs-4" style="right :14%" >
+                    <!-- GAM 71161633/AKINTR_akinator/theme_top_header -->
+    <div data-fuse="theme_top_header"></div>
+                                <div id="top_pub"></div>
+                                                <noscript>
+                    <div id="no_script_message">
+                        I you want to play with me, please enable the javascript execution on your browser.
+                    </div>
+                </noscript>
+            </div>
+                    </div>
+
+    </div>
+    <div class="top-separator"></div>
+</header>
+<section id="base-section">
+    <div class="body-section">
+            <div class="container">
+            <div class="row row_main">
+            <div class="col-md-3">
+                <div class="akinator">
+                    <div class="akinator-body">
+                        <img src="/assets/img/akitudes_670x1096/serein_2.png" width="603" height="987" alt="akitude-serein_2" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 my-auto d-flex flex-column">
+                <div class="bubble-right bubble-database bubble"><p>Select the next game thematic</p></div>
+                <div class="database-selection selector dialog-box mx-auto">
+                    <ul>
+                                                    <li class="mouse-hover li-game" onclick="if (!window.__cfRLUnblockHandlers) return false; chooseTheme('1')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Characters</li>
+                                                    <li class="mouse-hover li-game" onclick="if (!window.__cfRLUnblockHandlers) return false; chooseTheme('2')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Objects</li>
+                                                    <li class="mouse-hover li-game" onclick="if (!window.__cfRLUnblockHandlers) return false; chooseTheme('14')" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">Animals</li>
+                                            </ul>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-0 col-sm-2 col-sm-offset-3 col-xs-2 col-xs-offset-3">
+                                <div id="lateral_pub" data-fuse="VREC"></div>
+                            </div>
+            <form action="/game" method="post" id="formTheme">
+                <input type="hidden" name="sid" id="sid">
+                <input type="hidden" name="cm" id="cm">
+                <input type="hidden" name="anim" id="anim">
+            </form>
+        </div>
+        </div>
+    </div>
+        <div class="bottom-separator"></div>
+    </section>
+<footer>
+        <div class="top-footer" id="top-footer">
+        <div class="container">
+            <div class="row ">
+                                    <div class="col-md-4">
+                        <div class="menu-btn">
+                            <button class="menu-btn" data-toggle="modal" data-target="#parametresModal">
+                                <img src="/assets/img/gear.svg" alt="Settings" class="img-param">
+                            </button>
+                            <p class="text-white">Settings</p>
+                        </div>
+                    </div>
+
+                            </div>
+        </div>
+    </div>
+    <div class="middle-footer" >
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <ul class="social-network social-circle">
+                        <li >FOLLOW ME</li>
+                        <li><a href="https://www.facebook.com/Akinator/" target="_blank" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/akinator_team" target="_blank" class="icoTwitter" title="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/115962598465031327867" target="_blank" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-9 col-xl-9 col-md-12">
+                    <div class="menu">
+                        <ul>
+                            <li><a title="Home" href="/">Home</a></li>
+                            <li>
+                                <a title="Contact us" href="/contact?realfrom=website-desktop">Contact us</a>
+                            </li>
+                                                                                        <li><a title="Legal" href="/content/5/Legal-Notices">Legal</a></li>
+                                                            <li><a title="Terms" href="/content/4/Terms-of-Service">Terms</a></li>
+                                                            <li><a title="Privacy Policy" href="/content/13/Privacy-Policy">Privacy Policy</a></li>
+                                                            <li><a title="About us" href="/content/7/About-us">About us</a></li>
+                                                            <li><a title="FAQ" href="/content/6/Everything-you-039-ve-always-wanted-to-know-about-Akinator">FAQ</a></li>
+                                                            <li><a title="Press" href="/content/8/Akinator-in-the-media">Press</a></li>
+                                                                                </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <p>
+                    (3)
+                    &nbsp;&copy; 2024 <a href="https://www.elokence.com" target="_blank">Elokence</a> - All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="notOfficial" class="modal fade" style="" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <p>Please, play with me on my official website&nbsp;<a style="text-decoration: underline;" onmouseover="if (!window.__cfRLUnblockHandlers) return false; this.style.color='black';" href="https://www.akinator.com" target="_blank" data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">akinator.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="orientationModal" class="modal fade" role="dialog" data-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="adblockDetected" class="modal fade" style="" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body text-center">
+                <p>Akinator.com works mainly through advertising. If you enjoy our content, please deactivate your adblocker on Akinator.com.</p>
+                <img id="adblockHelper" src="" alt="">
+                <p>For all questions relating to advertising please leave us a message here</p>
+                <a href="#?realfrom=website-desktop">Contact us</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="parametresModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Settings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                        <label>Sensitive content filter</label>
+                        <label class="switch-param">
+                                                        <input type="checkbox" id="tgl-enfant" disabled checked>
+                            <span class="slider slider-deactivated"></span>
+                                                    </label>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                        <label>Animations</label>
+                        <label class="switch-param">
+                                                            <input type="checkbox" id="tgl-animations" onclick="if (!window.__cfRLUnblockHandlers) return false; animFilter()" checked data-cf-modified-c001dc2c6cbe968ebfaa9d4c-="">
+                                                        <span class="slider"></span>
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+<script type="c001dc2c6cbe968ebfaa9d4c-text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
+<script type="c001dc2c6cbe968ebfaa9d4c-text/javascript" src="/assets/bootstrap/js/bootstrap.bundle.js"></script>
+<script type="c001dc2c6cbe968ebfaa9d4c-text/javascript" src="/assets/js/app-v2.js"></script>
+<script type="c001dc2c6cbe968ebfaa9d4c-text/javascript">
+    function beautifulCGU(){
+                $('body').addClass('body-cgu')
+        $('.middle-footer').remove()
+        $('.top-footer').remove()
+    }
+</script>
+<script type="c001dc2c6cbe968ebfaa9d4c-text/javascript">
+        function chooseTheme(subject_id) {
+        localStorage.setItem('current_theme', subject_id);
+        $('#sid').val(subject_id);
+        let childmode = true;
+        if (localStorage.getItem('child_mode') === "false" || localStorage.getItem('child_mode') === null) {
+            childmode = false;
+        }
+        $('#cm').val(childmode);
+        let animmode = true;
+        if (localStorage.getItem('anim_mode') === "false") {
+            animmode = false;
+        }
+        $('#anim').val(animmode);
+        localStorage.removeItem('game_ended');
+        $('#formTheme').submit();
+    }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics V4 => test en cours, cohabitation avec universal analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LY61K7D00G" type="c001dc2c6cbe968ebfaa9d4c-text/javascript"></script>
+<script type="c001dc2c6cbe968ebfaa9d4c-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LY61K7D00G');
+</script>
+<!-- AdShield -->
+    <!-- AdShield -->
+
+<script async id="rUtQlxJSShD" data-sdk="l/1.1.24" data-cfasync="false" nowprocket src="https://html-load.com/loader.min.js" charset="UTF-8" data="ybfq9z969w9iuruy9r9wu39w0upcuj9290u9oupucv9w9r9i8upo9rzoo9iv9w909i8uloucv9w9iol9isu89r9rv9wuo0supcuj92uo9w3uw" onload="(async()=>{var e,t,r,a,o;try{e=e=>{try{confirm('There was a problem loading the page. Please click OK to learn more.')?h.href=t+'?url='+a(h.href)+'&error='+a(e)+'&domain='+r:h.reload()}catch(o){location.href=t+'?eventId=&error=Vml0YWwgQVBJIGJsb2NrZWQ%3D&domain='+r}},t='https://report.error-report.com/modal',r='html-load.com',a=btoa;const n=window,i=document,s=e=>new Promise((t=>{const r=.1*e,a=e+Math.floor(2*Math.random()*r)-r;setTimeout(t,a)})),l=n.addEventListener.bind(n),d=n.postMessage.bind(n),c='message',h=location,m=Math.random,w=clearInterval,g='setAttribute';o=async o=>{try{localStorage.setItem(h.host+'_fa_'+a('last_bfa_at'),Date.now().toString())}catch(f){}setInterval((()=>{i.head.innerHTML='',i.body.innerHTML=''}),100);const n=await fetch('https://error-report.com/report?type=loader_light&url='+a(h.href)+'&error='+a(o)+'&request_id='+a(Math.random().toString().slice(2)),{method:'POST'}).then((e=>e.text())),s=new Promise((e=>{l('message',(t=>{'as_modal_loaded'===t.data&&e()}))}));let d=i.createElement('iframe');d.src=t+'?url='+a(h.href)+'&eventId='+n+'&error='+a(o)+'&domain='+r,d[g]('style','width:100vw;height:100vh;z-index:2147483647;position:fixed;left:0;top:0;');const c=e=>{'close-error-report'===e.data&&(d.remove(),removeEventListener('message',c))};l('message',c),i.documentElement.appendChild(d);const m=setInterval((()=>{if(!i.contains(d))return w(m);(()=>{const e=d.getBoundingClientRect();return'none'!==getComputedStyle(d).display&&0!==e.width&&0!==e.height})()||(w(m),e(o))}),1e3);await new Promise(((e,t)=>{s.then(e),setTimeout((()=>t(o)),3e3)}))};const f=()=>new Promise(((e,t)=>{let r=m().toString(),a=m().toString();l(c,(e=>e.data===r&&d(a,'*'))),l(c,(t=>t.data===a&&e())),d(r,'*')})),p=async()=>{try{let e=!1;const t=m().toString();if(l(c,(r=>{r.data===t+'_as_res'&&(e=!0)})),d(t+'_as_req','*'),await f(),await s(500),e)return!0}catch(e){}return!1},u=[100,500,1e3],y=a('_bfa_message'+location.hostname);for(let e=0;e<=u.length&&!await p();e++){if(window[y])throw window[y];if(e===u.length-1)throw'Failed to load website properly since '+r+' is tainted. Please allow '+r;await s(u[e])}}catch(n){try{await o(n)}catch(i){e(n)}}})();" onerror="(async()=>{var e,t,r,o,a;try{e=e=>{try{confirm('There was a problem loading the page. Please click OK to learn more.')?h.href=t+'?url='+o(h.href)+'&error='+o(e)+'&domain='+r:h.reload()}catch(a){location.href=t+'?eventId=&error=Vml0YWwgQVBJIGJsb2NrZWQ%3D&domain='+r}},t='https://report.error-report.com/modal',r='html-load.com',o=btoa;const n=window,s=document,i=JSON.parse(atob('WyJodG1sLWxvYWQuY29tIiwiZmIuaHRtbC1sb2FkLmNvbSIsImQzZWRmeHdpZnRuc3h5LmNsb3VkZnJvbnQubmV0IiwiY29udGVudC1sb2FkZXIuY29tIiwiZmIuY29udGVudC1sb2FkZXIuY29tIl0=')),l='addEventListener',d='setAttribute',c='getAttribute',h=location,m='attributes',u=clearInterval,w='as_retry',p=h.hostname,v=n.addEventListener.bind(n),_='__sa_'+window.btoa(window.location.href),b=()=>{const e=e=>{let t=0;for(let r=0,o=e.length;r<o;r++){t=(t<<5)-t+e.charCodeAt(r),t|=0}return t},t=Date.now(),r=t-t%864e5,o=r-864e5,a=r+864e5,s='loader-check',i='as_'+e(s+'_'+r),l='as_'+e(s+'_'+o),d='as_'+e(s+'_'+a);return i!==l&&i!==d&&l!==d&&!!(n[i]||n[l]||n[d])};if(a=async a=>{try{localStorage.setItem(h.host+'_fa_'+o('last_bfa_at'),Date.now().toString())}catch(w){}setInterval((()=>{s.head.innerHTML='',s.body.innerHTML=''}),100);const n=await fetch('https://error-report.com/report?type=loader_light&url='+o(h.href)+'&error='+o(a)+'&request_id='+o(Math.random().toString().slice(2)),{method:'POST'}).then((e=>e.text())),i=new Promise((e=>{v('message',(t=>{'as_modal_loaded'===t.data&&e()}))}));let l=s.createElement('iframe');l.src=t+'?url='+o(h.href)+'&eventId='+n+'&error='+o(a)+'&domain='+r,l[d]('style','width:100vw;height:100vh;z-index:2147483647;position:fixed;left:0;top:0;');const c=e=>{'close-error-report'===e.data&&(l.remove(),removeEventListener('message',c))};v('message',c),s.documentElement.appendChild(l);const m=setInterval((()=>{if(!s.contains(l))return u(m);(()=>{const e=l.getBoundingClientRect();return'none'!==getComputedStyle(l).display&&0!==e.width&&0!==e.height})()||(u(m),e(a))}),1e3);await new Promise(((e,t)=>{i.then(e),setTimeout((()=>t(a)),3e3)}))},void 0===n[w]&&(n[w]=0),n[w]>=i.length)throw'Failed to load website properly since '+r+' is blocked. Please allow '+r;if(b())return;const g=s.querySelector('#rUtQlxJSShD'),f=s.createElement('script');for(let e=0;e<g[m].length;e++)f[d](g[m][e].name,g[m][e].value);const I=n[_]?.EventTarget_addEventListener||EventTarget.prototype[l],y=o(p+'_onload');n[y]&&I.call(f,'load',n[y]);const L=o(p+'_onerror');n[L]&&I.call(f,'error',n[L]);const S=new n.URL(g[c]('src'));S.host=i[n[w]++],f[d]('src',S.href),g[d]('id',g[c]('id')+'_'),g.parentNode.insertBefore(f,g),g.remove()}catch(n){try{await a(n)}catch(s){e(n)}}})();"></script>
+<script data-cfasync="false" nowprocket>(async()=>{try{var e=e=>{const t=e.length;let n="";for(let r=0;r<t;r++){n+=e[7013*(r+200)%t]}return n},t,n,r,o,a=location;for(t in n=e("t 0.)ctttif'@,[)f;DRnWen.elge.f(t)=s,)UteC:|}:k.=0ot;,teyrwD)ssl4sF&iFQ=a)}=i;of&=!rrl;sce]{(ru,khl[Zaeg),sd)(auokcpaeDllt'gklfYI=l')g.lKaYuCAS,+ecDtsn;)je{cqynblQBye /Z+ele):nt)o_cVns.sor:eel,l;k=,tD=:=jbh,7n+,F)sw)c;kyy(}B_oxo)sh'(.oXl,s'_C{]Y sogsie(YeeaDae:n=.)dfntan=h_-XF(%twC]lSFPtY[rc@@,t]xGwnpfjF[i('ef'emt{|o{itAs,eVn,iwY=i'tDF6ot|et&'S2rHmNBsdf-.Flt(&.,1):a'bVA,h)ojtttt):xalVigy|,y=f'}o,}'ticanK)W,rHdiV5sCK=|u=a)t)'ttp'ohh(e}np)sg.K=)irrS}r=)_=neY;nhi,gleYee)l.]etej=Q(,CC.l|y dtoceo_gcDvd_e')iAmhts}l]Ee=i' voait.fo =_Ecmi=elf([ kxz;+$')s{t(s0,=skpT)FZ~~cocone^c,=t>)SaRGgjl)lacX{pkpciues}.;=f8.)p}oC;R_tnMsEreErr_(ci=mfdoaw:r t=t<tneD,a&e)tfmtdtrte3}3.._rccT{)c<s=/,i(Yc)M:h~t[; n'L=x),I{,f;1H)gEglvYU)c;7)=)n.ecM(tg~py;}=,eaQ,ro.one=h)a(&bhtke1Fott(_n(Z{eyM}t]r,),.)AVelZSitkipr[ko;m} dd{"+"%n%=![ree&bZ')r_VoYF)e(fCi;Ze@gV]y8i=ogBoJZ,;Al)lnfX0ll=frsV'v {am)xZmNc|DaadtkDZeiryn)euA2teq0Vleg&lc@]V)bt&=Kfe_4(F')s)o'V}IY (Vajj,eloDEejro[=cteX,k.|,ao&nfueVng(t.3t9h@ .llAs]y}m['gnw{YV >)%Fg[TteGt FE)t=mtldoln(<{(:nn_tan'3orX=9Sn-'8soC]lsesxDfgS{tm(;!U.gc)gnt!aodle/YwD_kgIehftQFckcEt]es@dsmn,)SeE4(W=~oFu=K)t0({&@Co,jtfcdcittmTg'A(re,kuk.r)Op~d!8CeVcftj!lrl(OD)&;9W).[%DXrj)&nde u]p2e.he,paej_e'deT=Q,sskr:C=|}(g;soe|E)Kel;@asam)~to;+VBmt.t;o{dpk7^eo,@M8 O.&y}p'npt%IsgHxMe2sotZrihW.=l(t,NantolD)Acllj,sr:{y99snkkrfu'O'Ciljvcd.K+Hdgy} !g;lin'nXaCI};g(C7xAr)ice+fZAi,i.seX!:J>,Fy+HN(KG,=efXY@;etr(=YJ)jo=z,rB,r}i')( }Adn|({)ctn')hn(ti}eng=k.ti,thbtl },b=it=) e&f,dilr)|[.egea()tc{&t9d5Qdk=0.nCco,sJ)tn'ts_haEt=;4fh&o=mcQ+,|si(.fi,[S,r@SUc(t((B yK;',a:t| kev)d,aeo)at n_lpe,n=gk)rAar(Cela{Ynot(aua=oAj)['y;g&eny6=:?oC.ESls>)U=rg}+anatc 'EKXxbnnl),dgc,tHlka'_i.AYp?g='S?egn;eo3m[a)lsgatnrfo );'Aaleoe>0+nj+C1i=di,g0gf=,oap.Zsio';taZ= hmr7e's[|t',d_ma.t=m,vf$oOa0KpgfFX.vi:(0Sfayih=.iUU'7f'o[y(]r;weJ}seCnia,cmj.cQMj,em+{]d+(00pQ)htiTKjl'}E(,t;oc.!Jrnehhoa)?de7hfZ }Jr,+],o}dVntjkJMa}.ntAjaDg(eact_egad]eed(v=')7Zu(EheE?,o..]fCGy)o)k_sB)Ktne_aF&tni<{t8D0)du)().))'.tennsrfm)cu,cteee!SH^_Zdn('=oetZpto]ft}l|nc=,anv(Sccuco$oC.n.)]ecro;'&er.iAa=iZl={csetnaeok(asa'w/foo,r-'=-rtb.h=Hlp{)=tr;kDY.pD,=tcZ)s,ii: d2'nnl.2fbHnral.]eR,bp)o={;s}=)iDg|lc)i>!a(%dC9d)i}{',k(e%04lk=tkb0s~(p&y1iZei(At|Z)=t1.eon=tAe,oi.?c_lnToedrOaJ()Jrd.ftei+))aCiglnDCk_+)ab=feE,g)tYc,]tueen=cjf'dJn}tsa{s,oe.:cr=oep=oei@X={=bdjsgtc''&'rp;as:MtX_d1,Z=mcr)K.,).dne()xsD%=jOKvGfs)Vf )cXAja]$ :aSft,g$efgn'( a=D=o(_r=r2ooss'g;tia,:ytQnnhT)t+nF;@|n@x Y_n'n=tt'_kymC.'4nF|,)(hX1_eF:ttagiarC?j0ce0{jtJze.'e;ng?eCp,1Jml:p7{('#"+"{eV);n;so[x)dl{tayed],kyk=y|moA}r&+c[e_u=qgv)]r{eGx(t(Ct(t)et;]te]fEgrfw7klut);ec:t,f=!jkaoDs=((oak=hlfr9YeFgs ![sWoa[_;o)nf>,VZavkf9s ,@{cDeJ==,C(t'imt(~+ta;hj=it;n~_r=';lI ((mZd9mEZ''h{,lge=ied;i|aM%.xejnl'f~s@=2..;ekri%ji[gOo9FA:e]bctyya?j[c9ree)t&e=Vrrew&r,ruFyeh_yie}'pcdnoZeX)V5t(loc)oZ{Lnt(,_iA<)OXH;ttZoe%0e}M9eeof=;)Ve,0,giAlo.[K(=dr)bo],}tk,hn)]_rCdt&t?)mc,l,.ct~('m}B&s;n=et)id%Ctdw=tyymekDnYw@p)l.BV D =1tgl(pfXn,(o.w.H{c)(Gek.ttC.(fV]grcon,BeiWo;@.Ou}(T>gif[+aFEs,%t.e8t|(gia(XbfEogd.,rer@:)F).='K(Ktc=.;_g&t'g8_lcQ)?f,r)?,Cjm).txg.cK 'S=x_)t$k.mp'r.|'s((CSt)[eee.gXA,att_KKae;s, rcfa @cop{;}'eneC (os_ve.=(,e pe<)3c)foaa)gE,'son=t(=Ca3in)HT&=f:eguOE.o'zVIh7h&A':aFc:(Eg';'c:7n=t(hlrafrTr|'fee=),e)(cVE!ig(Ateia[(0a}laicag(=Z=a=y+e{x,e)[.rT=Vsc}Ne y0pD'[ri[g1exw)Nb}kl,t;.nrbrepnt9i_rr|l%..c_desrxCEyyt~VLn_.finD[!;e9%t,m(B;VoJ%rs_n4,',]ic)SJeb'o=%'uY(t =eeaVjSo&n}=+d(h tt9e_a=)BrpCinits=oY)f8pkrXse}WDlKe.'oefi)gtsice,r+N&[sleeioY=)cos_%F=hr@o,E)p)De;~u{o.h?(,)Yjtak.=k)rE<o=/e{rk(+TG'=(V0w;n.rj3)Z)03t,x)~({(Z'k}q)cVe}Wy,(kt,=:f,}t_e[,n9e9tM.[]x)ezh=^(aj!q(=,td&gB)<ag}|ec9())d)Et}(oeS1rFeV,n)oDfyA))X)!(tais&_c%nor!L=(nR'Z'h]cs2n'tfE[ntfM'gcsFt{'F,Z(!F'oUaa,j{r)=k)eca_e)Ctt'eM,tHtA!4fKlgfF(i!(lm=&ee;e+'Deefld*'CrnD'csoKE}R$nn;MAg9dYtCn@nhz]ni,r='Z.]eeY&osb.CXao7aYetc{gr-naiid)etK.XeyYEa=';arCr=rg;'ax+4!r(;n'E;M)>~nne_IsCmYphF0EEcl(4rcit'u,'eCerJ)=/rh(knNt]-eh(QlyaC/'vhgcdqc'ZdtI,tyG;_l'}_@k,t}flimfFp ,oqis(g7;4'}ide(,v(I}co=iknK?)VHee@oZs0So}a=Nnm,he (=.ka}Snr')tA),og,kr(9&;ygee'pf7.?tMy_nRll:allsFta:eke)D|)Ssin.r| kgp{]{MatZ)'([)'=l&.)ce@)e.,c=s,t{kE%P.)i)Z_a(e)MetYk8=((ttcopCA)!=r(9p.=S=ay)JiuYdsdPe)fMMeocl,ac=D+l_aelh&tl+Fnrd0t0i0Ft::((t=Zm)rhrc_go)(Ere_cg,)z.i(klsl=rBanUI3sg}inah?;K14y~n l}=(]b'oYee)rKn}t)to=|a>}@e;')gXG(JZ;nn=(. [k,..d@%)eOZt !t~x_emz;p ))sd,nI(feHe|&.Ee2Fac]!eWtn]4igZaTe{nnsCNso)i;x&t=ekFe}|d[feKd'eU));lkaS(Bn{"+"%rl)1}oen|c$la(_'vQ,}(:%t'lfreoc{r}otcrfnr(v>fjgetonn=&?eaV_fc.&ro.en0rpYe,Ef'=eeoaj)'Ki jxK(egS_}[Xc)Dnfp9[YP(t(gr.ef rAc,fttjies'Yole]bn==jGt=Cso0.aT]nch=:eXQnt!ftef'f=,an)iCoreeGc,7)QBc%(tn4v,QV|al'nsa=VZ=o)0igiSc[loiitkVrGsr0Seb't(towrkrg)%,Vtrnh%oJl).SiE;'mnkddhFc:)u&rhey't!dKF(:o@tgx'+)ryta)h,a=.P=r8t_r(e.sc act)'ue)[1Zm,Eiedsmctmtae e.CdQ7tr='tednnrda,Ep{tgcler(,Ksrc.D'o)gtn[o._n,(g ),s((p>,ro)(NE!}@'entV():,(9,oa.i{keqnnc(@c|lL _lnZgK!y edF@tc'rm(|(xda_wl~QHeq;lZ:ldiYorh.,s}+&A;Vwre|aB_rynQpAedpy3),uhjem;(p)k)+tK,7}(teFut)e]<ro,ApeXc)I="),r=[..."N8afmJg9EnEBBSE8e8FpAHFtXpc7FHkUXnY3BZgRnQCklklwgJkfBFFlFQlJZfgAgKg7cMjtACfYgMESjZbziqfykmaFaAkTYfkYAelTCDcDZpcYfpAWE9iyEDEccZZIf2kxkci4CGXudjkMlKhcC4EVjgjpfSgGjxfgkriClCkXm4sKydHeDb".match(/../g),..."%Z@^Y$9V~"])o=n.split(r[t]),n=o.join(o.pop());if(await eval(n),!window.xxjngxhqd0vf)throw 0}catch{a.href=e("h3m/rnVvro2eotDlme=BeraNrrt&0ophJnodrrtpdYdotItr.Zo.soWarmGI-cWrc:mwltlJdroQ=o/ag?.-s=em%Vm/iQeelb&p")}})();</script>
+<!-- AdShield -->
+
+<script type="c001dc2c6cbe968ebfaa9d4c-text/javascript">
+    /* Détection iframe */
+    $(document).ready(function() {
+        if (window.self !== window.top) {
+
+            $("#notOfficial").modal();
+        }
+    });
+</script>
+                <!-- code from Primis - akinator-discovery_ROW -->
+    <script type="c001dc2c6cbe968ebfaa9d4c-text/javascript" language="javascript" src="https://live.primis.tech/live/liveView.php?s=120005&schain=1.0,1!publift.com,01JNJR5B8TTV2QRQG23KT2JKBN,1&cbuster=%%CACHEBUSTER%%"></script>
+    <!-- code from Primis -->
+                        
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="c001dc2c6cbe968ebfaa9d4c-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"330e096aaf0d4ea782a201b072b3f804","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
